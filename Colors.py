@@ -8,8 +8,6 @@ class Colors(pygame.sprite.Sprite):
 
         self.x = x
         self.y = y
-        #self.name = name
-        #self.image = pygame.Surface((100,100))
         self.emoji = ['trollemoji.png','happyemoji.jpg','sademoji.png', \
                       'cryingemoji.png','laughingemoji.png','smirkemoji.png', \
                       'kissemoji.png', 'scaredemoji.png','loveemoji.png']
