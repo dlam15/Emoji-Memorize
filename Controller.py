@@ -166,10 +166,7 @@ class Controller:
                     elif len(self.choice) == len(self.picker):
                         self.score += 1
                         self.value = self.font.render('Score: '+ str(self.score),True,(0,0,255))
-                        return True
-                    else:
-                        self.score += 1
-                        self.value = self.font.render('Score: '+ str(self.score),True,(0,0,255))
+                        return True                        
                 self.display.blit(self.background,(0,0))
                 self.spritebox.draw(self.display)
                 self.display.blit(self.value,(50,600))
@@ -200,6 +197,9 @@ class Controller:
                 pygame.display.flip()
                 pygame.time.delay(1000)
                 right = False
+        if right:
+            self.score += 1
+            self.value = self.font.render('Score: '+ str(self.score),True,(0,0,255))
         return right
                         
 
